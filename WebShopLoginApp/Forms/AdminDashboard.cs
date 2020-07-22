@@ -92,6 +92,9 @@ namespace WebShopLoginApp
         private void btnUserFilter_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+
+            //Show Create User Form
+            openChildForm(new frmFilterUsers());
         } 
         #endregion
 

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebShopLoginApp.User
+namespace WebShopLoginApp
 {
     public class User
     {
@@ -17,6 +17,14 @@ namespace WebShopLoginApp.User
         public string Username { get; set; }
         public string Email { get; set; }
         private string password;
+
+        public string FullInfo
+        {
+            get
+            {
+                return $"{ FirstName } { FirstName } ({ Email })";
+            }
+        }
         /// <summary>
         /// Address id is a connection with user address in Address Repository
         /// </summary>
@@ -64,6 +72,8 @@ namespace WebShopLoginApp.User
             Console.WriteLine($"-------------------------");
 
         }
+
+        
         #endregion
     }
 }

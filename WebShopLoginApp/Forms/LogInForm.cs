@@ -21,7 +21,7 @@ namespace WebShopLoginApp
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            //const string connectionString = ConfigurationManager.ConnectionStrings["WebShopProjectFinal"];
+            const string connectionString = @"Data Source=DESKTOP-77T8UC5\SQLEXPRESS;Initial Catalog=WebShopProjectFinal;Integrated Security=True";
             SqlConnection sqlcon = new SqlConnection();
 
             string query = $"select * from Users where Username ='" + usernameTxtBox.Text.Trim() + "'and Password = '" + passwordTxtBox.Text.Trim() + "'";
