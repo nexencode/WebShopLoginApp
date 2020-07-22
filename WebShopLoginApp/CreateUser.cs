@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace WebShopLoginApp
 {
-    public partial class frmAdminDashboard : Form
+    public partial class frmCreateUser : Form
     {
-        public frmAdminDashboard()
+        public frmCreateUser()
         {
             InitializeComponent();
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
